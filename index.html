@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="style.css" rel="stylesheet">
+
+	<title>Merrin Chacko</title>
+</head>
+<body>
+	<header>
+		<h2>MC.</h2>
+		<nav>
+			<li><a href='#Intro'>Home</a></li>
+			<li><a href='#About'>About</a></li>
+			<li><a href='#Academics'>Academics</a></li>
+			<li><a href='#Skills'>Skills</a></li>
+			<li><a href="#Projects">Projects</a></li>
+		</nav>
+	</header>
+
+	<section class="intro" id="Intro">
+		<div class="background-img"></div>
+		<img class="intro-image" src="IMG_2411.jpg">
+		<h1>Hi There.</h1>
+		<h3>I am <span style='color:#d9d9d9'>Merrin Chacko</span>, a web development enthusiast and a student.</h3>
+		<a href="#Contact" class="btn">Contact Me</a>
+	</section>
+
+	<section class="container" id="About">
+		<h3 class="section-title">About Me</h3>
+		<div class="content">
+			<p>I am a twenty year computer science student who is passionate about frontend development. I consider myself a beginner and have a long way to go. My goal is to be a developer and to build projects that integrate different domains of technology. Other than coding I am interested in painting, reading and travelling.</p>
+		</div>
+	</section>
+
+	<section class="container" id="Academics">
+		<h3 class="section-title">Academics</h3>
+		<ul class="content">
+			<p>Currently I am in the third year of pursuing Bachelors of Computer Science and Engineering from Model Engineering College , Thrikkakara.I hope to graduate next year. Over the years I have got a solid understanding of the computer science concepts.</p>
+		</ul>
+	</section>
+
+	<section class="container" id="Skills">
+		<h3 class="section-title">Skills</h3>
+		<ul class="skills">
+			<li>HTML & CSS</li>
+			<li>Java Script</li>
+			<li>Python</li>
+			<li>SQL</li>
+		</ul>
+	</section>
+
+	<section class="container" id="Projects">
+		<h3 class="section-title">Projects</h3>
+		<div class="content">
+			<h4>Spam Mail Detector</h4>
+			<p>To detect if a mail is spam or not using Naive Bayes Classifier.</p>
+			<h4>Chatbot</h4>
+			<p>Built a chatbot using dialogflow.</p> 
+		</div>
+	</section>
+
+	<section class='contact-area' id="Contact">
+		<h3 class="section-title">Contact</h3>
+		<ul class="contact-content">
+			
+			<li>
+				<a href="https://www.linkedin.com/in/merrin-chacko-753052185 "target="_blank" class="logo"><img src="linkedin.png" alt="Linkedin"></a>
+				
+			</li>
+			<li>
+				<a href="https://github.com/merc2000 "target="_blank" class="logo"><img src="git.png" alt="Linkedin"></a>
+			</li>
+			<li>
+				<a href="https://twitter.com/Merc20002?s=09"target="_blank" class="logo"><img src="twitter.png" alt="Linkedin"></a>
+			</li>
+		</ul>
+	</section>	
+
+	<button onclick="topFunction()" id="Btn" title="Go to top">Back to top</button>
+
+	<script>
+
+	var mybutton = document.getElementById("Btn");
+
+
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+  		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    	mybutton.style.display = "block";
+  		} else {
+    	mybutton.style.display = "none";
+  		}
+	}
+	function topFunction() {
+  		document.body.scrollTop = 0;
+  		document.documentElement.scrollTop = 0;
+		}
+	</script>
+
+
+</body>
+</html>
